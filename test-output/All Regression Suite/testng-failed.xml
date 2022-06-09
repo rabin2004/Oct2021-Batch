@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Regression Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Regression Test(failed)">
+    <classes>
+      <class name="testNGbasics.DataDrivenFromSeparateTestDataClass">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="initialization"/>
+          <include name="positiveLoginFunctionalityTestByClickingSubmitBtn" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- testNGbasics.DataDrivenFromSeparateTestDataClass -->
+      <class name="testNGbasics.CreatingDependency">
+        <methods>
+          <include name="registerLinkTest"/>
+          <include name="registrationFunctionalityTest"/>
+          <include name="closeBrowser"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- testNGbasics.CreatingDependency -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [All Regression Suite] -->

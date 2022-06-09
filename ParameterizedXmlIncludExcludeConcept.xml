@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Parameterized Suite">
+  <test thread-count="5" name="Regression">
+  <parameter name="chromeKey" value="webdriver.chrome.driver"/>
+  <parameter name="chromePath" value="E:\\Drivers\\chromedriver.exe"/>
+  <parameter name="testURL" value="https://demo.guru99.com/test/newtours/index.php"/>
+  
+    <classes>
+      <class name="testNGbasics.ParametrizationAndIncludeExcludeXml">
+      	<methods>
+      		<!-- <include name="negativeLoginFunctionalityTestByClickSubmitBtn"/> -->
+      		<!-- <exclude name="negativeLoginFunctionalityTestByClickSubmitBtn"/> -->
+      		<include name="negative.*"/>
+      		<include name="positive.*"/>
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Regression -->
+</suite> <!-- Parameterized Suite -->

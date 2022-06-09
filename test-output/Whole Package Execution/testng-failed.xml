@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Whole Package Execution]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Major Regression(failed)">
+    <classes>
+      <class name="testNGbasics.DataDrivenFromSeparateTestDataClass">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="initialization"/>
+          <include name="positiveLoginFunctionalityTestByClickingSubmitBtn" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNGbasics.DataDrivenFromSeparateTestDataClass -->
+      <class name="testNGbasics.DataDrivenTesting">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="positiveLoginFunctionalityTestByClickingSubmitBtn" invocation-numbers="1 2"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- testNGbasics.DataDrivenTesting -->
+      <class name="testNGbasics.UsingAnnotations">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="positiveLoginFunctionalityTestByHittingEnterKey"/>
+          <include name="positiveLoginFunctionalityTestByClickingSubmitBtn"/>
+          <include name="backToHomePage"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- testNGbasics.UsingAnnotations -->
+      <class name="testNGbasics.FirstTestNGscript">
+        <methods>
+          <include name="positiveLoginFunctionalityTest"/>
+        </methods>
+      </class> <!-- testNGbasics.FirstTestNGscript -->
+      <class name="testNGbasics.CreatingDependency">
+        <methods>
+          <include name="registerLinkTest"/>
+          <include name="registrationFunctionalityTest"/>
+          <include name="closeBrowser"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- testNGbasics.CreatingDependency -->
+    </classes>
+  </test> <!-- Major Regression(failed) -->
+</suite> <!-- Failed suite [Whole Package Execution] -->
